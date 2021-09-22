@@ -1,0 +1,23 @@
+<!--- index.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import ListItem from '.';
+
+<Meta title="MDX/ListItem" component={ListItem} />
+
+# ListItem in Search Component
+
+ListItem Component should show all results from a search.
+
+export const Template = (args) => <ListItem {...args} />
+
+<Canvas>
+  <Story 
+    name="Default"
+    args={{ 
+      label: 'Default story',
+  }}>
+  {Template.bind({})}
+  </Story>
+</Canvas>

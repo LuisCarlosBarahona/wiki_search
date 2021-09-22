@@ -1,6 +1,7 @@
 import { useSearch } from "../../hooks";
 import Container from "../../components/Container";
 import Autocomplete from "../../components/Autocomplete";
+import ListItem from "../../components/ListItem";
 
 const Search = ({...props}) => {
     const search = props.location.search;
@@ -17,15 +18,9 @@ const Search = ({...props}) => {
                     onSearchChange={onSearchChange}/>}
             </Container>
             {articles && !articles.length && status=== 'SUCCESS' && <h3>No articles found</h3>}
-            {articles && articles.length && articles.map(article => {
-                return (
-                    <div key={article.id}>
-                        <a href={article.id} target="_blank">
-                            {article.label}
-                        </a>
-                    </div>
-                )
-            })}
+            {articles && articles.length && articles.map(article => 
+                <ListItem {...article} key={article.id} />
+            )}
         </div>
     )
 };
