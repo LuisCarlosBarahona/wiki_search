@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './styles.css';
 
 const ListItem = ({id, label}) => {
@@ -12,5 +12,10 @@ const ListItem = ({id, label}) => {
         </div>
     );
 }
+
+ListItem.propTypes = {
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired
+};
 
 export default ListItem;
