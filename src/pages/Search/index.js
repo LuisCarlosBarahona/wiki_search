@@ -1,3 +1,4 @@
+import React from 'react';
 import { useSearch } from "../../hooks";
 import Container from "../../components/Container";
 import Autocomplete from "../../components/Autocomplete";

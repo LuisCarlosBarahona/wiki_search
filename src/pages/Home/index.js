@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Container from "../../components/Container";
 import Autocomplete from "../../components/Autocomplete";
 import './styles.css';

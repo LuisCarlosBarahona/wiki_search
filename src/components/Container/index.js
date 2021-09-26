@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { useDebounce, useSearch, useSearchForm } from "../../hooks";
 
 const Container = ({children}) => {

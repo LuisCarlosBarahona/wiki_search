@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Autocomplete Component when articles are NOT passed should match snapshot 1`] = `<React.Fragment />`;
+
+exports[`Autocomplete Component when articles are passed should match snapshot 1`] = `
+<div
+  className="input-suggestions"
+  style={Object {}}
+>
+  <a
+    className="search-link"
+    href="/search?query=undefined"
+  >
+    See all results
+  </a>
+</div>
+`;
+
+exports[`Autocomplete Component when renderItem props is called when item is highlighted should match renderMenusnapshot 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#eee",
+    }
+  }
+>
+  test
+</div>
+`;
+
+exports[`Autocomplete Component when renderItem props is called when item is not highlighted should match renderMenusnapshot 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "transparent",
+    }
+  }
+>
+  test
+</div>
+`;
+
+exports[`Autocomplete Component without props should match snapshot 1`] = `ShallowWrapper {}`;
