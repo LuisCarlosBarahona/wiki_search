@@ -18,5 +18,8 @@
     "coverageReporters": [
       "text",
       "html"
-    ]
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "jest-coverage",
+    "testEnvironment": "node"
 }
