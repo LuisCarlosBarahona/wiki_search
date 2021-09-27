@@ -27,7 +27,8 @@
     "test:ci": "yarn test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "cy": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@cypress/code-coverage": "^3.9.11",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
@@ -53,6 +55,8 @@
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
     "babel-loader": "^8.1.0",
+    "babel-plugin-istanbul": "^6.0.0",
+    "cypress": "^8.4.1",
     "moxios": "^0.4.0",
     "react-is": "^16.13.1"
   }

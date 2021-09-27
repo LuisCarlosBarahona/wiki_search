@@ -4,6 +4,7 @@ import Input from '../Input';
 
 const Autocomplete = ({articles, searchValue, onSearchChange}) => (
     <ReactAutocomplete
+        className="autocomplete"
         items={articles}
         renderInput={Input}
         inputProps={{placeholder: 'Input a search term:'}}
@@ -12,9 +13,9 @@ const Autocomplete = ({articles, searchValue, onSearchChange}) => (
         return articles && articles.length ? (
             <div style={{...style}} className="input-suggestions">
             {children}
-            <a href={`/search?query=${value}`} className="search-link">
-                See all results
-            </a>
+                <a href={`/search?query=${value}`} className="search-link">
+                    See all results
+                </a>
             </div>
         ): <></>
         }}
